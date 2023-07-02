@@ -6,8 +6,8 @@ To run the application locally, you need to have Docker installed on your machin
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/spacex-rockets-app.git
-cd spacex-rockets-app
+git clone https://github.com/ana1999-code/SpaceX-Rockets-Application.git
+cd SpaceX-Rockets-Application
 ```
 2. Run the following command to start the application and PostgreSQL database using Docker Compose:
 ```bash
