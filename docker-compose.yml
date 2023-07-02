@@ -1,0 +1,16 @@
+services:
+  db:
+    container_name: rockets_db
+    image: postgres
+    environment:
+      POSTGRES_USER: rocket_user
+      POSTGRES_PASSWORD: rocket
+      POSTGRES_DB: rockets
+    ports:
+      - "5432:5432"
+    volumes:
+      - rockets_data:/data/postgres
+    restart: unless-stopped
+
+volumes:
+  rockets_data:

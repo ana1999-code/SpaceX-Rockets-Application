@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <payloads id="1" option_1="composite fairing" height_meters="3.5" height_feet="11.5" diameter_meters="1.5" diameter_feet="4.9"/>
+  <payloads id="2" option_1="dragon" option_2="composite fairing" height_meters="13.1" height_feet="43.0" diameter_meters="5.2" diameter_feet="17.1"/>
+  <payloads id="3" option_1="dragon" option_2="composite fairing" height_meters="13.1" height_feet="43.0" diameter_meters="5.2" diameter_feet="17.1"/>
+  <payloads id="4" option_1="Spaceship" option_2="composite fairing" height_meters="0.0" height_feet="0.0" diameter_meters="0.0" diameter_feet="0.0"/>
+  <second_stage id="2" reusable="false" engines="1" fuel_amount_tones="0" burn_time_sec="378" kn="0" lbf="7000" payloads_id="1"/>
+  <second_stage id="4" reusable="false" engines="1" fuel_amount_tones="0" burn_time_sec="397" kn="0" lbf="210000" payloads_id="2"/>
+  <second_stage id="6" reusable="false" engines="1" fuel_amount_tones="0" burn_time_sec="397" kn="0" lbf="210000" payloads_id="3"/>
+  <second_stage id="8" reusable="true" engines="6" fuel_amount_tones="0" burn_time_sec="0" kn="0" lbf="440000" payloads_id="4"/>
+  <first_stage id="1" reusable="false" engines="1" burn_time_sec="169" sea_level_kn="0" sea_level_lbf="94000" vacuum_level_kn="0" vacuum_level_lbf="110000"/>
+  <first_stage id="3" reusable="true" engines="9" burn_time_sec="162" sea_level_kn="0" sea_level_lbf="1710000" vacuum_level_kn="0" vacuum_level_lbf="1849500"/>
+  <first_stage id="5" reusable="true" engines="27" burn_time_sec="162" sea_level_kn="0" sea_level_lbf="5130000" vacuum_level_kn="0" vacuum_level_lbf="5548500"/>
+  <first_stage id="7" reusable="true" engines="37" burn_time_sec="0" sea_level_kn="0" sea_level_lbf="28775544" vacuum_level_kn="0" vacuum_level_lbf="31023634"/>
+  <engines id="1" number="1" type="merlin" version="1C" layout="single" engine_loss_max="0" propellant_1="liquid oxygen" propellant_2="RP-1 kerosene" sea_level_kn="0" sea_level_lbf="94000" vacuum_level_kn="0" vacuum_level_lbf="110000" thrust_to_weight="96.0"/>
+  <engines id="2" number="9" type="merlin" version="1D+" layout="octaweb" engine_loss_max="2" propellant_1="liquid oxygen" propellant_2="RP-1 kerosene" sea_level_kn="0" sea_level_lbf="190000" vacuum_level_kn="0" vacuum_level_lbf="205500" thrust_to_weight="180.1"/>
+  <engines id="3" number="27" type="merlin" version="1D+" layout="octaweb" engine_loss_max="6" propellant_1="liquid oxygen" propellant_2="RP-1 kerosene" sea_level_kn="0" sea_level_lbf="190000" vacuum_level_kn="0" vacuum_level_lbf="205500" thrust_to_weight="180.1"/>
+  <engines id="4" number="37" type="raptor" version="1D" engine_loss_max="0" propellant_1="liquid oxygen" propellant_2="liquid methane" sea_level_kn="0" sea_level_lbf="400000" vacuum_level_kn="0" vacuum_level_lbf="440000" thrust_to_weight="107.0"/>
+  <rocket _id="10109054-addd-4f2c-b48a-13db40de2a19" id="1" active="false" stages="2" boosters="0" cost_per_launch="6700000" success_rate_pct="40" first_flight="2006-03-24 02:00:00.0" country="Republic of the Marshall Islands" company="SpaceX" height_meters="22.25" height_feet="73.0" diameter_meters="1.68" diameter_feet="5.5" first_stage_id="1" second_stage_id="2" engine_id="1" number="0" wikipedia="https://en.wikipedia.org/wiki/Falcon_1" description="16481" rocket_id="falcon1" rocket_name="Falcon 1" rocket_type="rocket"/>
+  <rocket _id="536cf2e1-1fd6-46a2-b423-77b963cdc85a" id="2" active="true" stages="2" boosters="0" cost_per_launch="50000000" success_rate_pct="97" first_flight="2010-06-04 03:00:00.0" country="United States" company="SpaceX" height_meters="70.0" height_feet="229.6" diameter_meters="3.7" diameter_feet="12.0" first_stage_id="3" second_stage_id="4" engine_id="2" number="4" material="carbon fiber" wikipedia="https://en.wikipedia.org/wiki/Falcon_9" description="16482" rocket_id="falcon9" rocket_name="Falcon 9" rocket_type="rocket"/>
+  <rocket _id="cb8e7f97-75da-49c6-8ff7-e52db957eeb1" id="3" active="true" stages="2" boosters="2" cost_per_launch="90000000" success_rate_pct="100" first_flight="2018-02-06 02:00:00.0" country="United States" company="SpaceX" height_meters="70.0" height_feet="229.6" diameter_meters="12.2" diameter_feet="39.9" first_stage_id="5" second_stage_id="6" engine_id="3" number="12" material="carbon fiber" wikipedia="https://en.wikipedia.org/wiki/Falcon_Heavy" description="16483" rocket_id="falconheavy" rocket_name="Falcon Heavy" rocket_type="rocket"/>
+  <rocket _id="7890d058-20c5-4725-abaf-0a72832791ef" id="4" active="false" stages="2" boosters="0" cost_per_launch="7000000" success_rate_pct="0" first_flight="2021-12-01 02:00:00.0" country="United States" company="SpaceX" height_meters="118.0" height_feet="387.0" diameter_meters="9.0" diameter_feet="30.0" first_stage_id="7" second_stage_id="8" engine_id="4" number="6" material="stainless steel" wikipedia="https://en.wikipedia.org/wiki/SpaceX_Starship" description="16484" rocket_id="starship" rocket_name="Starship" rocket_type="rocket"/>
+  <payload_weight _id="1" id="leo" name="Low Earth Orbit" kg="450" lb="992"/>
+  <payload_weight _id="2" id="gto" name="Geosynchronous Transfer Orbit" kg="8300" lb="18300"/>
+  <payload_weight _id="3" id="leo" name="Low Earth Orbit" kg="22800" lb="50265"/>
+  <payload_weight _id="4" id="mars" name="Mars Orbit" kg="4020" lb="8860"/>
+  <payload_weight _id="5" id="mars" name="Mars Orbit" kg="16800" lb="37040"/>
+  <payload_weight _id="6" id="gto" name="Geosynchronous Transfer Orbit" kg="26700" lb="58860"/>
+  <payload_weight _id="7" id="pluto" name="Pluto Orbit" kg="3500" lb="7720"/>
+  <payload_weight _id="8" id="leo" name="Low Earth Orbit" kg="63800" lb="140660"/>
+  <payload_weight _id="9" id="moon" name="Moon Orbit" kg="100000" lb="220000"/>
+  <payload_weight _id="10" id="leo" name="Low Earth Orbit" kg="150000" lb="330000"/>
+  <payload_weight _id="11" id="mars" name="Mars Orbit" kg="100000" lb="220000"/>
+  <rocket_payload_weight rocket_id="10109054-addd-4f2c-b48a-13db40de2a19" payload_id="1"/>
+  <rocket_payload_weight rocket_id="536cf2e1-1fd6-46a2-b423-77b963cdc85a" payload_id="2"/>
+  <rocket_payload_weight rocket_id="536cf2e1-1fd6-46a2-b423-77b963cdc85a" payload_id="3"/>
+  <rocket_payload_weight rocket_id="536cf2e1-1fd6-46a2-b423-77b963cdc85a" payload_id="4"/>
+  <rocket_payload_weight rocket_id="cb8e7f97-75da-49c6-8ff7-e52db957eeb1" payload_id="5"/>
+  <rocket_payload_weight rocket_id="cb8e7f97-75da-49c6-8ff7-e52db957eeb1" payload_id="6"/>
+  <rocket_payload_weight rocket_id="cb8e7f97-75da-49c6-8ff7-e52db957eeb1" payload_id="7"/>
+  <rocket_payload_weight rocket_id="cb8e7f97-75da-49c6-8ff7-e52db957eeb1" payload_id="8"/>
+  <rocket_payload_weight rocket_id="7890d058-20c5-4725-abaf-0a72832791ef" payload_id="9"/>
+  <rocket_payload_weight rocket_id="7890d058-20c5-4725-abaf-0a72832791ef" payload_id="10"/>
+  <rocket_payload_weight rocket_id="7890d058-20c5-4725-abaf-0a72832791ef" payload_id="11"/>
+</dataset>

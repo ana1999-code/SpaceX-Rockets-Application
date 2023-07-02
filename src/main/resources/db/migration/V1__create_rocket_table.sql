@@ -1,0 +1,28 @@
+CREATE TABLE rocket
+(
+    _id VARCHAR,
+    id INT NOT NULL,
+    active BOOLEAN,
+    stages INT,
+    boosters INT,
+    cost_per_launch INT,
+    success_rate_pct INT,
+    first_flight TIMESTAMP,
+    country VARCHAR,
+    company VARCHAR,
+    height_meters DOUBLE PRECISION,
+    height_feet DOUBLE PRECISION,
+    diameter_meters DOUBLE PRECISION,
+    diameter_feet DOUBLE PRECISION,
+    first_stage_id INT,
+    second_stage_id INT,
+    engine_id INT,
+    number INT,
+    material VARCHAR,
+    wikipedia VARCHAR,
+    description OID,
+    rocket_id VARCHAR NOT NULL UNIQUE,
+    rocket_name VARCHAR NOT NULL UNIQUE,
+    rocket_type VARCHAR,
+    CONSTRAINT rocket_id_pk PRIMARY KEY (_id)
+);
