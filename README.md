@@ -18,7 +18,11 @@ docker-compose up -d
 mvn flyway:migrate -Psx-rockets-app
 ```
 Once the application and database are up and running, you can access the endpoints through your web browser or API testing tool like Postman or Swagger.
-### Profile: sx-rockets-app
+### Profile: sx-rocket-app
+_Run the following command in terminal:_
+```bash
+mvn clean spring-boot:run -Psx-rocket-app
+ ```
 This profile uses WebClient to consume the /rockets endpoint from https://api.spacexdata.com/v3/rockets. You can access the following endpoints:
 
 - __GET /rockets__: Get a list of all rockets from the SpaceX API.
@@ -27,7 +31,12 @@ __saveToDatabase (optional)__: Set to true if you want to store the fetched rock
 
 - __GET /rockets/{rocketId}__: Get a specific rocket by ID from the SpaceX API.
 
-### Profile: rockets-app (Default Profile)
+### Profile: rocket-app (Default Profile)
+_Run the following command in terminal:_  
+```bash
+mvn clean spring-boot:run -Procket-app
+ ```
+
 This profile retrieves rockets from the local database. It provides the following endpoints:
 
 - __GET /rockets__: Get a list of all rockets from the local database.

@@ -35,13 +35,16 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<properties>
-				<spring.profiles.active>rocket-app</spring.profiles.active>
+				<profiles.active>rocket-app</profiles.active>
 			</properties>
 		</profile>
 		<profile>
 			<id>sx-rocket-app</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
 			<properties>
-				<spring.profiles.active>sx-rocket-app</spring.profiles.active>
+				<profiles.active>sx-rocket-app</profiles.active>
 			</properties>
 		</profile>
 	</profiles>
@@ -141,12 +144,6 @@
 	</dependencies>
 
 	<build>
-			<resources>
-				<resource>
-					<directory>src/main/resources</directory>
-					<filtering>true</filtering>
-				</resource>
-			</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -167,7 +164,6 @@
 				<configuration>
 					<user>${flyway.user}</user>
 					<password>${flyway.password}</password>
-					<cleanDisabled>false</cleanDisabled>
 				</configuration>
 			</plugin>
 		</plugins>
